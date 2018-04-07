@@ -1,6 +1,6 @@
 Feature: Authenticated user can Post and Get data from endpoints
 
-  Background: User is authenticated to post an Invalid request
+  Background: User is authenticated to make API calls
 
   Scenario Outline: 1.Get data from valid endPoint
     Given I am an authenticated user who can get request from "<end-point>"
@@ -29,17 +29,14 @@ Feature: Authenticated user can Post and Get data from endpoints
 
 
   Scenario: 3.Post valid data into lists endpoint
-    Given I am an authenticated list endpoint user
     When I make a valid post request on lists endpoint
     Then I should get list response as 201 created
 
   Scenario: 4.Post valid data into folders endpoint
-    Given I am an authenticated folders endpoint user
     When I make a valid post request on folders endpoint
     Then I should get folder response as 201 created
 
   Scenario: 5.Post valid data into comments endpoint
-    Given I am an authenticated comment endpoint user
     When I make a valid post request on comment endpoint
     Then I should get comments response as 201 created
 

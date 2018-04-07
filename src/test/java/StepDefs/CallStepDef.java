@@ -53,8 +53,7 @@ public class CallStepDef {
                 .with()
                 .body(payLoad.list())
                 .when()
-                .post("http://a.wunderlist.com/api/v1/lists")
-                .then().log().all();
+                .post("http://a.wunderlist.com/api/v1/lists");
     }
 
 
@@ -68,7 +67,7 @@ public class CallStepDef {
                 .body(payLoad.list())
                 .when()
                 .post("http://a.wunderlist.com/api/v1/lists")
-                .then().log().all()
+                .then()
                 .statusCode(code);
     }
 
@@ -82,7 +81,7 @@ public class CallStepDef {
                 .body(payLoad.list())
                 .when()
                 .post("http://a.wunderlist.com/api/v1/lists")
-                .then().log().all()
+                .then()
                 .statusCode(code);
     }
 
@@ -96,7 +95,7 @@ public class CallStepDef {
                 .body(payLoad.folder())
                 .when()
                 .post("http://a.wunderlist.com/api/v1/folders")
-                .then().log().all()
+                .then()
                 .statusCode(code);
     }
 
@@ -110,8 +109,7 @@ public class CallStepDef {
                 .with()
                 .body(payLoad.folder())
                 .when()
-                .post("http://a.wunderlist.com/api/v1/folders")
-                .then().log().all();
+                .post("http://a.wunderlist.com/api/v1/folders");
     }
 
     @When("^I make a valid post request on comment endpoint$")
@@ -123,41 +121,7 @@ public class CallStepDef {
                 .with()
                 .body(payLoad.comments())
                 .when()
-                .post("http://a.wunderlist.com/api/v1/task_comments")
-                .then().log().all();
-    }
-
-    @Given("^I am an authenticated list endpoint user$")
-    public void iAmAnAuthenticatedListEndpointUser() throws Throwable {
-        given()
-                .contentType("application/json")
-                .header("X-Client-ID", "2174bddbc41e1098d48d")
-                .header("X-Access-Token", "92f627d4bd9d027da6b1f93d582a44d8fd8c55c2686c0003799d79d063d3")
-                .with()
-                .body(payLoad.list())
-                .when()
-                .post("http://a.wunderlist.com/api/v1/lists");
-    }
-
-    @Given("^I am an authenticated folders endpoint user$")
-    public void iAmAnAuthenticatedFoldersEndpointUser() throws Throwable {
-        given()
-                .contentType("application/json")
-                .header("X-Client-ID", "2174bddbc41e1098d48d")
-                .header("X-Access-Token", "92f627d4bd9d027da6b1f93d582a44d8fd8c55c2686c0003799d79d063d3")
-                .when()
-                .get("http://a.wunderlist.com/api/v1/folders");
-    }
-
-    @Given("^I am an authenticated comment endpoint user$")
-    public void iAmAnAuthenticatedCommentEndpointUser() throws Throwable {
-        given()
-                .contentType("application/json")
-                .header("X-Client-ID", "2174bddbc41e1098d48d")
-                .header("X-Access-Token", "92f627d4bd9d027da6b1f93d582a44d8fd8c55c2686c0003799d79d063d3")
-                .when()
-                .get("http://a.wunderlist.com/api/v1/task_comments")
-                .then().log().all();
+                .post("http://a.wunderlist.com/api/v1/task_comments");
     }
 
     @When("^I make an invalid post request on lists endpoint$")
@@ -170,6 +134,7 @@ public class CallStepDef {
                 .body(payLoad.badlist())
                 .when()
                 .post("http://a.wunderlist.com/api/v1/lists");
+
     }
 
     @Then("^I should get response as (\\d+) Bad Request for list$")
@@ -186,17 +151,6 @@ public class CallStepDef {
                 .statusCode(code);
     }
 
-//    @Given("^I am an authenticated membership endpoint user$")
-//    public void iAmAnAuthenticatedMembershipEndpointUser() throws Throwable {
-//        given()
-//                .contentType("application/json")
-//                .header("X-Client-ID", "2174bddbc41e1098d48d")
-//                .header("X-Access-Token", "92f627d4bd9d027da6b1f93d582a44d8fd8c55c2686c0003799d79d063d3")
-//                .when()
-//                .get("http://a.wunderlist.com/api/v1/memberships")
-//                .then()
-//                .statusCode(200);
-//    }
 
     @When("^I make an invalid post request on upload endpoint$")
     public void iMakeAnInvalidPostRequestOnUploadEndpoint() throws Throwable {
@@ -209,19 +163,6 @@ public class CallStepDef {
                 .body(payLoad.badUploadData())
                 .post("http://a.wunderlist.com/api/v1/uploads");
     }
-
-
-//    @Given("^I am an authenticated upload endpoint user$")
-//    public void iAmAnAuthenticatedUploadEndpointUser() throws Throwable {
-//        given()
-//                .contentType("application/json")
-//                .header("X-Client-ID", "2174bddbc41e1098d48d")
-//                .header("X-Access-Token", "92f627d4bd9d027da6b1f93d582a44d8fd8c55c2686c0003799d79d063d3")
-//                .when()
-//                .get("http://a.wunderlist.com/api/v1/uploads")
-//                .then()
-//                .statusCode(200);
-//    }
 
 
     @When("^I make an invalid post request on memberships endpoint$")

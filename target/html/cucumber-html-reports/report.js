@@ -1,16 +1,16 @@
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/java/FeatureFiles/requests.feature");
 formatter.feature({
   "line": 1,
-  "name": "Authenticated user can Post data to lists endpoint",
+  "name": "Authenticated user can Post and Get data from endpoints",
   "description": "",
-  "id": "authenticated-user-can-post-data-to-lists-endpoint",
+  "id": "authenticated-user-can-post-and-get-data-from-endpoints",
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
   "line": 5,
   "name": "1.Get data from valid endPoint",
   "description": "",
-  "id": "authenticated-user-can-post-data-to-lists-endpoint;1.get-data-from-valid-endpoint",
+  "id": "authenticated-user-can-post-and-get-data-from-endpoints;1.get-data-from-valid-endpoint",
   "type": "scenario_outline",
   "keyword": "Scenario Outline"
 });
@@ -33,7 +33,7 @@ formatter.examples({
   "line": 10,
   "name": "",
   "description": "",
-  "id": "authenticated-user-can-post-data-to-lists-endpoint;1.get-data-from-valid-endpoint;",
+  "id": "authenticated-user-can-post-and-get-data-from-endpoints;1.get-data-from-valid-endpoint;",
   "rows": [
     {
       "cells": [
@@ -41,7 +41,7 @@ formatter.examples({
         "end-point"
       ],
       "line": 11,
-      "id": "authenticated-user-can-post-data-to-lists-endpoint;1.get-data-from-valid-endpoint;;1"
+      "id": "authenticated-user-can-post-and-get-data-from-endpoints;1.get-data-from-valid-endpoint;;1"
     },
     {
       "cells": [
@@ -49,7 +49,7 @@ formatter.examples({
         "http://a.wunderlist.com/api/v1/folders"
       ],
       "line": 12,
-      "id": "authenticated-user-can-post-data-to-lists-endpoint;1.get-data-from-valid-endpoint;;2"
+      "id": "authenticated-user-can-post-and-get-data-from-endpoints;1.get-data-from-valid-endpoint;;2"
     },
     {
       "cells": [
@@ -57,7 +57,7 @@ formatter.examples({
         "http://a.wunderlist.com/api/v1/lists"
       ],
       "line": 13,
-      "id": "authenticated-user-can-post-data-to-lists-endpoint;1.get-data-from-valid-endpoint;;3"
+      "id": "authenticated-user-can-post-and-get-data-from-endpoints;1.get-data-from-valid-endpoint;;3"
     },
     {
       "cells": [
@@ -65,7 +65,7 @@ formatter.examples({
         "http://a.wunderlist.com/api/v1/memberships"
       ],
       "line": 14,
-      "id": "authenticated-user-can-post-data-to-lists-endpoint;1.get-data-from-valid-endpoint;;4"
+      "id": "authenticated-user-can-post-and-get-data-from-endpoints;1.get-data-from-valid-endpoint;;4"
     },
     {
       "cells": [
@@ -73,14 +73,14 @@ formatter.examples({
         "http://a.wunderlist.com/api/v1/root"
       ],
       "line": 15,
-      "id": "authenticated-user-can-post-data-to-lists-endpoint;1.get-data-from-valid-endpoint;;5"
+      "id": "authenticated-user-can-post-and-get-data-from-endpoints;1.get-data-from-valid-endpoint;;5"
     }
   ],
   "keyword": "Examples"
 });
 formatter.background({
   "line": 3,
-  "name": "User is authenticated to post an Invalid request",
+  "name": "User is authenticated to make API calls",
   "description": "",
   "type": "background",
   "keyword": "Background"
@@ -89,7 +89,7 @@ formatter.scenario({
   "line": 12,
   "name": "1.Get data from valid endPoint",
   "description": "",
-  "id": "authenticated-user-can-post-data-to-lists-endpoint;1.get-data-from-valid-endpoint;;2",
+  "id": "authenticated-user-can-post-and-get-data-from-endpoints;1.get-data-from-valid-endpoint;;2",
   "type": "scenario",
   "keyword": "Scenario Outline"
 });
@@ -128,7 +128,7 @@ formatter.match({
   "location": "CallStepDef.iAmAnAuthenticatedUserWhoCanGetRequestFrom(String)"
 });
 formatter.result({
-  "duration": 2625377918,
+  "duration": 2689855702,
   "status": "passed"
 });
 formatter.match({
@@ -141,7 +141,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAGetRequestOnEndpoint(String)"
 });
 formatter.result({
-  "duration": 270078542,
+  "duration": 326631964,
   "status": "passed"
 });
 formatter.match({
@@ -158,12 +158,12 @@ formatter.match({
   "location": "CallStepDef.getRequestResponseShouldBeWithEndpoint(int,String)"
 });
 formatter.result({
-  "duration": 428579891,
+  "duration": 860116829,
   "status": "passed"
 });
 formatter.background({
   "line": 3,
-  "name": "User is authenticated to post an Invalid request",
+  "name": "User is authenticated to make API calls",
   "description": "",
   "type": "background",
   "keyword": "Background"
@@ -172,7 +172,7 @@ formatter.scenario({
   "line": 13,
   "name": "1.Get data from valid endPoint",
   "description": "",
-  "id": "authenticated-user-can-post-data-to-lists-endpoint;1.get-data-from-valid-endpoint;;3",
+  "id": "authenticated-user-can-post-and-get-data-from-endpoints;1.get-data-from-valid-endpoint;;3",
   "type": "scenario",
   "keyword": "Scenario Outline"
 });
@@ -211,7 +211,7 @@ formatter.match({
   "location": "CallStepDef.iAmAnAuthenticatedUserWhoCanGetRequestFrom(String)"
 });
 formatter.result({
-  "duration": 268852846,
+  "duration": 522500492,
   "status": "passed"
 });
 formatter.match({
@@ -224,7 +224,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAGetRequestOnEndpoint(String)"
 });
 formatter.result({
-  "duration": 230406307,
+  "duration": 560117323,
   "status": "passed"
 });
 formatter.match({
@@ -241,12 +241,12 @@ formatter.match({
   "location": "CallStepDef.getRequestResponseShouldBeWithEndpoint(int,String)"
 });
 formatter.result({
-  "duration": 190145200,
+  "duration": 379168726,
   "status": "passed"
 });
 formatter.background({
   "line": 3,
-  "name": "User is authenticated to post an Invalid request",
+  "name": "User is authenticated to make API calls",
   "description": "",
   "type": "background",
   "keyword": "Background"
@@ -255,7 +255,7 @@ formatter.scenario({
   "line": 14,
   "name": "1.Get data from valid endPoint",
   "description": "",
-  "id": "authenticated-user-can-post-data-to-lists-endpoint;1.get-data-from-valid-endpoint;;4",
+  "id": "authenticated-user-can-post-and-get-data-from-endpoints;1.get-data-from-valid-endpoint;;4",
   "type": "scenario",
   "keyword": "Scenario Outline"
 });
@@ -294,7 +294,7 @@ formatter.match({
   "location": "CallStepDef.iAmAnAuthenticatedUserWhoCanGetRequestFrom(String)"
 });
 formatter.result({
-  "duration": 180157324,
+  "duration": 492524872,
   "status": "passed"
 });
 formatter.match({
@@ -307,7 +307,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAGetRequestOnEndpoint(String)"
 });
 formatter.result({
-  "duration": 206066212,
+  "duration": 479235089,
   "status": "passed"
 });
 formatter.match({
@@ -324,12 +324,12 @@ formatter.match({
   "location": "CallStepDef.getRequestResponseShouldBeWithEndpoint(int,String)"
 });
 formatter.result({
-  "duration": 162301855,
+  "duration": 247924320,
   "status": "passed"
 });
 formatter.background({
   "line": 3,
-  "name": "User is authenticated to post an Invalid request",
+  "name": "User is authenticated to make API calls",
   "description": "",
   "type": "background",
   "keyword": "Background"
@@ -338,7 +338,7 @@ formatter.scenario({
   "line": 15,
   "name": "1.Get data from valid endPoint",
   "description": "",
-  "id": "authenticated-user-can-post-data-to-lists-endpoint;1.get-data-from-valid-endpoint;;5",
+  "id": "authenticated-user-can-post-and-get-data-from-endpoints;1.get-data-from-valid-endpoint;;5",
   "type": "scenario",
   "keyword": "Scenario Outline"
 });
@@ -377,7 +377,7 @@ formatter.match({
   "location": "CallStepDef.iAmAnAuthenticatedUserWhoCanGetRequestFrom(String)"
 });
 formatter.result({
-  "duration": 141723832,
+  "duration": 217037890,
   "status": "passed"
 });
 formatter.match({
@@ -390,7 +390,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAGetRequestOnEndpoint(String)"
 });
 formatter.result({
-  "duration": 172470978,
+  "duration": 232431739,
   "status": "passed"
 });
 formatter.match({
@@ -407,14 +407,14 @@ formatter.match({
   "location": "CallStepDef.getRequestResponseShouldBeWithEndpoint(int,String)"
 });
 formatter.result({
-  "duration": 153533328,
+  "duration": 207525340,
   "status": "passed"
 });
 formatter.scenarioOutline({
   "line": 18,
   "name": "2.Get data from invalid endPoint",
   "description": "",
-  "id": "authenticated-user-can-post-data-to-lists-endpoint;2.get-data-from-invalid-endpoint",
+  "id": "authenticated-user-can-post-and-get-data-from-endpoints;2.get-data-from-invalid-endpoint",
   "type": "scenario_outline",
   "keyword": "Scenario Outline"
 });
@@ -437,7 +437,7 @@ formatter.examples({
   "line": 23,
   "name": "",
   "description": "",
-  "id": "authenticated-user-can-post-data-to-lists-endpoint;2.get-data-from-invalid-endpoint;",
+  "id": "authenticated-user-can-post-and-get-data-from-endpoints;2.get-data-from-invalid-endpoint;",
   "rows": [
     {
       "cells": [
@@ -445,7 +445,7 @@ formatter.examples({
         "end-point"
       ],
       "line": 24,
-      "id": "authenticated-user-can-post-data-to-lists-endpoint;2.get-data-from-invalid-endpoint;;1"
+      "id": "authenticated-user-can-post-and-get-data-from-endpoints;2.get-data-from-invalid-endpoint;;1"
     },
     {
       "cells": [
@@ -453,7 +453,7 @@ formatter.examples({
         "http://a.wunderlist.com/api/v1/lists1"
       ],
       "line": 25,
-      "id": "authenticated-user-can-post-data-to-lists-endpoint;2.get-data-from-invalid-endpoint;;2"
+      "id": "authenticated-user-can-post-and-get-data-from-endpoints;2.get-data-from-invalid-endpoint;;2"
     },
     {
       "cells": [
@@ -461,7 +461,7 @@ formatter.examples({
         "http://a.wunderlist.com/api/v1/folders2"
       ],
       "line": 26,
-      "id": "authenticated-user-can-post-data-to-lists-endpoint;2.get-data-from-invalid-endpoint;;3"
+      "id": "authenticated-user-can-post-and-get-data-from-endpoints;2.get-data-from-invalid-endpoint;;3"
     },
     {
       "cells": [
@@ -469,7 +469,7 @@ formatter.examples({
         "http://a.wunderlist.com/api/v1/notes3"
       ],
       "line": 27,
-      "id": "authenticated-user-can-post-data-to-lists-endpoint;2.get-data-from-invalid-endpoint;;4"
+      "id": "authenticated-user-can-post-and-get-data-from-endpoints;2.get-data-from-invalid-endpoint;;4"
     },
     {
       "cells": [
@@ -477,14 +477,14 @@ formatter.examples({
         "http://a.wunderlist.com/api/v1/root4"
       ],
       "line": 28,
-      "id": "authenticated-user-can-post-data-to-lists-endpoint;2.get-data-from-invalid-endpoint;;5"
+      "id": "authenticated-user-can-post-and-get-data-from-endpoints;2.get-data-from-invalid-endpoint;;5"
     }
   ],
   "keyword": "Examples"
 });
 formatter.background({
   "line": 3,
-  "name": "User is authenticated to post an Invalid request",
+  "name": "User is authenticated to make API calls",
   "description": "",
   "type": "background",
   "keyword": "Background"
@@ -493,7 +493,7 @@ formatter.scenario({
   "line": 25,
   "name": "2.Get data from invalid endPoint",
   "description": "",
-  "id": "authenticated-user-can-post-data-to-lists-endpoint;2.get-data-from-invalid-endpoint;;2",
+  "id": "authenticated-user-can-post-and-get-data-from-endpoints;2.get-data-from-invalid-endpoint;;2",
   "type": "scenario",
   "keyword": "Scenario Outline"
 });
@@ -532,7 +532,7 @@ formatter.match({
   "location": "CallStepDef.iAmAnAuthenticatedUserWhoCanGetRequestFrom(String)"
 });
 formatter.result({
-  "duration": 143955545,
+  "duration": 360314648,
   "status": "passed"
 });
 formatter.match({
@@ -545,7 +545,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAGetRequestOnEndpoint(String)"
 });
 formatter.result({
-  "duration": 138454367,
+  "duration": 406555080,
   "status": "passed"
 });
 formatter.match({
@@ -562,12 +562,12 @@ formatter.match({
   "location": "CallStepDef.getRequestResponseShouldBeWithEndpoint(int,String)"
 });
 formatter.result({
-  "duration": 162449955,
+  "duration": 357560709,
   "status": "passed"
 });
 formatter.background({
   "line": 3,
-  "name": "User is authenticated to post an Invalid request",
+  "name": "User is authenticated to make API calls",
   "description": "",
   "type": "background",
   "keyword": "Background"
@@ -576,7 +576,7 @@ formatter.scenario({
   "line": 26,
   "name": "2.Get data from invalid endPoint",
   "description": "",
-  "id": "authenticated-user-can-post-data-to-lists-endpoint;2.get-data-from-invalid-endpoint;;3",
+  "id": "authenticated-user-can-post-and-get-data-from-endpoints;2.get-data-from-invalid-endpoint;;3",
   "type": "scenario",
   "keyword": "Scenario Outline"
 });
@@ -615,7 +615,7 @@ formatter.match({
   "location": "CallStepDef.iAmAnAuthenticatedUserWhoCanGetRequestFrom(String)"
 });
 formatter.result({
-  "duration": 172427606,
+  "duration": 490135892,
   "status": "passed"
 });
 formatter.match({
@@ -628,7 +628,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAGetRequestOnEndpoint(String)"
 });
 formatter.result({
-  "duration": 155285835,
+  "duration": 248854877,
   "status": "passed"
 });
 formatter.match({
@@ -645,12 +645,12 @@ formatter.match({
   "location": "CallStepDef.getRequestResponseShouldBeWithEndpoint(int,String)"
 });
 formatter.result({
-  "duration": 139535843,
+  "duration": 235720598,
   "status": "passed"
 });
 formatter.background({
   "line": 3,
-  "name": "User is authenticated to post an Invalid request",
+  "name": "User is authenticated to make API calls",
   "description": "",
   "type": "background",
   "keyword": "Background"
@@ -659,7 +659,7 @@ formatter.scenario({
   "line": 27,
   "name": "2.Get data from invalid endPoint",
   "description": "",
-  "id": "authenticated-user-can-post-data-to-lists-endpoint;2.get-data-from-invalid-endpoint;;4",
+  "id": "authenticated-user-can-post-and-get-data-from-endpoints;2.get-data-from-invalid-endpoint;;4",
   "type": "scenario",
   "keyword": "Scenario Outline"
 });
@@ -698,7 +698,7 @@ formatter.match({
   "location": "CallStepDef.iAmAnAuthenticatedUserWhoCanGetRequestFrom(String)"
 });
 formatter.result({
-  "duration": 142375468,
+  "duration": 179894976,
   "status": "passed"
 });
 formatter.match({
@@ -711,7 +711,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAGetRequestOnEndpoint(String)"
 });
 formatter.result({
-  "duration": 141613110,
+  "duration": 182344607,
   "status": "passed"
 });
 formatter.match({
@@ -728,12 +728,12 @@ formatter.match({
   "location": "CallStepDef.getRequestResponseShouldBeWithEndpoint(int,String)"
 });
 formatter.result({
-  "duration": 132544153,
+  "duration": 420294449,
   "status": "passed"
 });
 formatter.background({
   "line": 3,
-  "name": "User is authenticated to post an Invalid request",
+  "name": "User is authenticated to make API calls",
   "description": "",
   "type": "background",
   "keyword": "Background"
@@ -742,7 +742,7 @@ formatter.scenario({
   "line": 28,
   "name": "2.Get data from invalid endPoint",
   "description": "",
-  "id": "authenticated-user-can-post-data-to-lists-endpoint;2.get-data-from-invalid-endpoint;;5",
+  "id": "authenticated-user-can-post-and-get-data-from-endpoints;2.get-data-from-invalid-endpoint;;5",
   "type": "scenario",
   "keyword": "Scenario Outline"
 });
@@ -781,7 +781,7 @@ formatter.match({
   "location": "CallStepDef.iAmAnAuthenticatedUserWhoCanGetRequestFrom(String)"
 });
 formatter.result({
-  "duration": 502043063,
+  "duration": 680762414,
   "status": "passed"
 });
 formatter.match({
@@ -794,7 +794,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAGetRequestOnEndpoint(String)"
 });
 formatter.result({
-  "duration": 173486515,
+  "duration": 223509822,
   "status": "passed"
 });
 formatter.match({
@@ -811,12 +811,12 @@ formatter.match({
   "location": "CallStepDef.getRequestResponseShouldBeWithEndpoint(int,String)"
 });
 formatter.result({
-  "duration": 162817382,
+  "duration": 383354996,
   "status": "passed"
 });
 formatter.background({
   "line": 3,
-  "name": "User is authenticated to post an Invalid request",
+  "name": "User is authenticated to make API calls",
   "description": "",
   "type": "background",
   "keyword": "Background"
@@ -825,37 +825,25 @@ formatter.scenario({
   "line": 31,
   "name": "3.Post valid data into lists endpoint",
   "description": "",
-  "id": "authenticated-user-can-post-data-to-lists-endpoint;3.post-valid-data-into-lists-endpoint",
+  "id": "authenticated-user-can-post-and-get-data-from-endpoints;3.post-valid-data-into-lists-endpoint",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
   "line": 32,
-  "name": "I am an authenticated list endpoint user",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 33,
   "name": "I make a valid post request on lists endpoint",
   "keyword": "When "
 });
 formatter.step({
-  "line": 34,
+  "line": 33,
   "name": "I should get list response as 201 created",
   "keyword": "Then "
-});
-formatter.match({
-  "location": "CallStepDef.iAmAnAuthenticatedListEndpointUser()"
-});
-formatter.result({
-  "duration": 283205416,
-  "status": "passed"
 });
 formatter.match({
   "location": "CallStepDef.iMakeAValidPostRequestOnListsEndpoint()"
 });
 formatter.result({
-  "duration": 252008683,
+  "duration": 819522148,
   "status": "passed"
 });
 formatter.match({
@@ -868,51 +856,39 @@ formatter.match({
   "location": "CallStepDef.iShouldGetListResponseAsCreated(int)"
 });
 formatter.result({
-  "duration": 249445510,
+  "duration": 375004672,
   "status": "passed"
 });
 formatter.background({
   "line": 3,
-  "name": "User is authenticated to post an Invalid request",
+  "name": "User is authenticated to make API calls",
   "description": "",
   "type": "background",
   "keyword": "Background"
 });
 formatter.scenario({
-  "line": 36,
+  "line": 35,
   "name": "4.Post valid data into folders endpoint",
   "description": "",
-  "id": "authenticated-user-can-post-data-to-lists-endpoint;4.post-valid-data-into-folders-endpoint",
+  "id": "authenticated-user-can-post-and-get-data-from-endpoints;4.post-valid-data-into-folders-endpoint",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 37,
-  "name": "I am an authenticated folders endpoint user",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 38,
+  "line": 36,
   "name": "I make a valid post request on folders endpoint",
   "keyword": "When "
 });
 formatter.step({
-  "line": 39,
+  "line": 37,
   "name": "I should get folder response as 201 created",
   "keyword": "Then "
-});
-formatter.match({
-  "location": "CallStepDef.iAmAnAuthenticatedFoldersEndpointUser()"
-});
-formatter.result({
-  "duration": 194470401,
-  "status": "passed"
 });
 formatter.match({
   "location": "CallStepDef.iMakeAValidPostRequestOnFoldersEndpoint()"
 });
 formatter.result({
-  "duration": 268328856,
+  "duration": 311069565,
   "status": "passed"
 });
 formatter.match({
@@ -925,51 +901,39 @@ formatter.match({
   "location": "CallStepDef.iShouldGetFolderResponseAsCreated(int)"
 });
 formatter.result({
-  "duration": 292697160,
+  "duration": 536913713,
   "status": "passed"
 });
 formatter.background({
   "line": 3,
-  "name": "User is authenticated to post an Invalid request",
+  "name": "User is authenticated to make API calls",
   "description": "",
   "type": "background",
   "keyword": "Background"
 });
 formatter.scenario({
-  "line": 41,
+  "line": 39,
   "name": "5.Post valid data into comments endpoint",
   "description": "",
-  "id": "authenticated-user-can-post-data-to-lists-endpoint;5.post-valid-data-into-comments-endpoint",
+  "id": "authenticated-user-can-post-and-get-data-from-endpoints;5.post-valid-data-into-comments-endpoint",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 42,
-  "name": "I am an authenticated comment endpoint user",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 43,
+  "line": 40,
   "name": "I make a valid post request on comment endpoint",
   "keyword": "When "
 });
 formatter.step({
-  "line": 44,
+  "line": 41,
   "name": "I should get comments response as 201 created",
   "keyword": "Then "
-});
-formatter.match({
-  "location": "CallStepDef.iAmAnAuthenticatedCommentEndpointUser()"
-});
-formatter.result({
-  "duration": 146869219,
-  "status": "passed"
 });
 formatter.match({
   "location": "CallStepDef.iMakeAValidPostRequestOnCommentEndpoint()"
 });
 formatter.result({
-  "duration": 174180465,
+  "duration": 196291668,
   "status": "passed"
 });
 formatter.match({
@@ -982,31 +946,31 @@ formatter.match({
   "location": "CallStepDef.iShouldGetCommentsResponseAsCreated(int)"
 });
 formatter.result({
-  "duration": 269469925,
+  "duration": 421384036,
   "status": "passed"
 });
 formatter.background({
   "line": 3,
-  "name": "User is authenticated to post an Invalid request",
+  "name": "User is authenticated to make API calls",
   "description": "",
   "type": "background",
   "keyword": "Background"
 });
 formatter.scenario({
-  "line": 47,
+  "line": 44,
   "name": "6.Post Invalid data into lists endpoint",
   "description": "",
-  "id": "authenticated-user-can-post-data-to-lists-endpoint;6.post-invalid-data-into-lists-endpoint",
+  "id": "authenticated-user-can-post-and-get-data-from-endpoints;6.post-invalid-data-into-lists-endpoint",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 48,
+  "line": 45,
   "name": "I make an invalid post request on lists endpoint",
   "keyword": "When "
 });
 formatter.step({
-  "line": 49,
+  "line": 46,
   "name": "I should get response as 400 Bad Request for list",
   "keyword": "Then "
 });
@@ -1014,7 +978,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAnInvalidPostRequestOnListsEndpoint()"
 });
 formatter.result({
-  "duration": 170474813,
+  "duration": 414669503,
   "status": "passed"
 });
 formatter.match({
@@ -1027,31 +991,31 @@ formatter.match({
   "location": "CallStepDef.iShouldGetResponseAsBadRequestForList(int)"
 });
 formatter.result({
-  "duration": 173987937,
+  "duration": 416538726,
   "status": "passed"
 });
 formatter.background({
   "line": 3,
-  "name": "User is authenticated to post an Invalid request",
+  "name": "User is authenticated to make API calls",
   "description": "",
   "type": "background",
   "keyword": "Background"
 });
 formatter.scenario({
-  "line": 51,
+  "line": 48,
   "name": "7.Post Invalid data into membership endpoint",
   "description": "",
-  "id": "authenticated-user-can-post-data-to-lists-endpoint;7.post-invalid-data-into-membership-endpoint",
+  "id": "authenticated-user-can-post-and-get-data-from-endpoints;7.post-invalid-data-into-membership-endpoint",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 52,
+  "line": 49,
   "name": "I make an invalid post request on memberships endpoint",
   "keyword": "When "
 });
 formatter.step({
-  "line": 53,
+  "line": 50,
   "name": "I should get response as 400 Bad Request for membership",
   "keyword": "Then "
 });
@@ -1059,7 +1023,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAnInvalidPostRequestOnMembershipEndpoint()"
 });
 formatter.result({
-  "duration": 168303397,
+  "duration": 805395957,
   "status": "passed"
 });
 formatter.match({
@@ -1072,31 +1036,31 @@ formatter.match({
   "location": "CallStepDef.iShouldGetResponseAsBadRequestForMembership(int)"
 });
 formatter.result({
-  "duration": 179430932,
+  "duration": 448263678,
   "status": "passed"
 });
 formatter.background({
   "line": 3,
-  "name": "User is authenticated to post an Invalid request",
+  "name": "User is authenticated to make API calls",
   "description": "",
   "type": "background",
   "keyword": "Background"
 });
 formatter.scenario({
-  "line": 55,
+  "line": 52,
   "name": "8.Post Invalid data into upload endpoint",
   "description": "",
-  "id": "authenticated-user-can-post-data-to-lists-endpoint;8.post-invalid-data-into-upload-endpoint",
+  "id": "authenticated-user-can-post-and-get-data-from-endpoints;8.post-invalid-data-into-upload-endpoint",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 56,
+  "line": 53,
   "name": "I make an invalid post request on upload endpoint",
   "keyword": "When "
 });
 formatter.step({
-  "line": 57,
+  "line": 54,
   "name": "I should get response as 400 Bad Request for upload",
   "keyword": "Then "
 });
@@ -1104,7 +1068,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAnInvalidPostRequestOnUploadEndpoint()"
 });
 formatter.result({
-  "duration": 173200190,
+  "duration": 245792398,
   "status": "passed"
 });
 formatter.match({
@@ -1117,7 +1081,7 @@ formatter.match({
   "location": "CallStepDef.iShouldGetResponseAsBadRequestForUpload(int)"
 });
 formatter.result({
-  "duration": 188061234,
+  "duration": 336164613,
   "status": "passed"
 });
 });

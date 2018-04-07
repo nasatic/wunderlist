@@ -4,7 +4,7 @@
     "elements": [
       {
         "line": 3,
-        "name": "User is authenticated to post an Invalid request",
+        "name": "User is authenticated to make API calls",
         "description": "",
         "type": "background",
         "keyword": "Background"
@@ -13,13 +13,13 @@
         "line": 12,
         "name": "1.Get data from valid endPoint",
         "description": "",
-        "id": "authenticated-user-can-post-data-to-lists-endpoint;1.get-data-from-valid-endpoint;;2",
+        "id": "authenticated-user-can-post-and-get-data-from-endpoints;1.get-data-from-valid-endpoint;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 2625377918,
+              "duration": 2689855702,
               "status": "passed"
             },
             "line": 6,
@@ -40,7 +40,7 @@
           },
           {
             "result": {
-              "duration": 270078542,
+              "duration": 326631964,
               "status": "passed"
             },
             "line": 7,
@@ -61,7 +61,7 @@
           },
           {
             "result": {
-              "duration": 428579891,
+              "duration": 860116829,
               "status": "passed"
             },
             "line": 8,
@@ -89,7 +89,7 @@
       },
       {
         "line": 3,
-        "name": "User is authenticated to post an Invalid request",
+        "name": "User is authenticated to make API calls",
         "description": "",
         "type": "background",
         "keyword": "Background"
@@ -98,13 +98,13 @@
         "line": 13,
         "name": "1.Get data from valid endPoint",
         "description": "",
-        "id": "authenticated-user-can-post-data-to-lists-endpoint;1.get-data-from-valid-endpoint;;3",
+        "id": "authenticated-user-can-post-and-get-data-from-endpoints;1.get-data-from-valid-endpoint;;3",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 268852846,
+              "duration": 522500492,
               "status": "passed"
             },
             "line": 6,
@@ -125,7 +125,7 @@
           },
           {
             "result": {
-              "duration": 230406307,
+              "duration": 560117323,
               "status": "passed"
             },
             "line": 7,
@@ -146,7 +146,7 @@
           },
           {
             "result": {
-              "duration": 190145200,
+              "duration": 379168726,
               "status": "passed"
             },
             "line": 8,
@@ -174,7 +174,7 @@
       },
       {
         "line": 3,
-        "name": "User is authenticated to post an Invalid request",
+        "name": "User is authenticated to make API calls",
         "description": "",
         "type": "background",
         "keyword": "Background"
@@ -183,13 +183,13 @@
         "line": 14,
         "name": "1.Get data from valid endPoint",
         "description": "",
-        "id": "authenticated-user-can-post-data-to-lists-endpoint;1.get-data-from-valid-endpoint;;4",
+        "id": "authenticated-user-can-post-and-get-data-from-endpoints;1.get-data-from-valid-endpoint;;4",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 180157324,
+              "duration": 492524872,
               "status": "passed"
             },
             "line": 6,
@@ -210,7 +210,7 @@
           },
           {
             "result": {
-              "duration": 206066212,
+              "duration": 479235089,
               "status": "passed"
             },
             "line": 7,
@@ -231,7 +231,7 @@
           },
           {
             "result": {
-              "duration": 162301855,
+              "duration": 247924320,
               "status": "passed"
             },
             "line": 8,
@@ -259,7 +259,7 @@
       },
       {
         "line": 3,
-        "name": "User is authenticated to post an Invalid request",
+        "name": "User is authenticated to make API calls",
         "description": "",
         "type": "background",
         "keyword": "Background"
@@ -268,13 +268,13 @@
         "line": 15,
         "name": "1.Get data from valid endPoint",
         "description": "",
-        "id": "authenticated-user-can-post-data-to-lists-endpoint;1.get-data-from-valid-endpoint;;5",
+        "id": "authenticated-user-can-post-and-get-data-from-endpoints;1.get-data-from-valid-endpoint;;5",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 141723832,
+              "duration": 217037890,
               "status": "passed"
             },
             "line": 6,
@@ -295,7 +295,7 @@
           },
           {
             "result": {
-              "duration": 172470978,
+              "duration": 232431739,
               "status": "passed"
             },
             "line": 7,
@@ -316,7 +316,7 @@
           },
           {
             "result": {
-              "duration": 153533328,
+              "duration": 207525340,
               "status": "passed"
             },
             "line": 8,
@@ -344,7 +344,7 @@
       },
       {
         "line": 3,
-        "name": "User is authenticated to post an Invalid request",
+        "name": "User is authenticated to make API calls",
         "description": "",
         "type": "background",
         "keyword": "Background"
@@ -353,13 +353,13 @@
         "line": 25,
         "name": "2.Get data from invalid endPoint",
         "description": "",
-        "id": "authenticated-user-can-post-data-to-lists-endpoint;2.get-data-from-invalid-endpoint;;2",
+        "id": "authenticated-user-can-post-and-get-data-from-endpoints;2.get-data-from-invalid-endpoint;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 143955545,
+              "duration": 360314648,
               "status": "passed"
             },
             "line": 19,
@@ -380,7 +380,7 @@
           },
           {
             "result": {
-              "duration": 138454367,
+              "duration": 406555080,
               "status": "passed"
             },
             "line": 20,
@@ -401,7 +401,7 @@
           },
           {
             "result": {
-              "duration": 162449955,
+              "duration": 357560709,
               "status": "passed"
             },
             "line": 21,
@@ -429,7 +429,7 @@
       },
       {
         "line": 3,
-        "name": "User is authenticated to post an Invalid request",
+        "name": "User is authenticated to make API calls",
         "description": "",
         "type": "background",
         "keyword": "Background"
@@ -438,13 +438,13 @@
         "line": 26,
         "name": "2.Get data from invalid endPoint",
         "description": "",
-        "id": "authenticated-user-can-post-data-to-lists-endpoint;2.get-data-from-invalid-endpoint;;3",
+        "id": "authenticated-user-can-post-and-get-data-from-endpoints;2.get-data-from-invalid-endpoint;;3",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 172427606,
+              "duration": 490135892,
               "status": "passed"
             },
             "line": 19,
@@ -465,7 +465,7 @@
           },
           {
             "result": {
-              "duration": 155285835,
+              "duration": 248854877,
               "status": "passed"
             },
             "line": 20,
@@ -486,7 +486,7 @@
           },
           {
             "result": {
-              "duration": 139535843,
+              "duration": 235720598,
               "status": "passed"
             },
             "line": 21,
@@ -514,7 +514,7 @@
       },
       {
         "line": 3,
-        "name": "User is authenticated to post an Invalid request",
+        "name": "User is authenticated to make API calls",
         "description": "",
         "type": "background",
         "keyword": "Background"
@@ -523,13 +523,13 @@
         "line": 27,
         "name": "2.Get data from invalid endPoint",
         "description": "",
-        "id": "authenticated-user-can-post-data-to-lists-endpoint;2.get-data-from-invalid-endpoint;;4",
+        "id": "authenticated-user-can-post-and-get-data-from-endpoints;2.get-data-from-invalid-endpoint;;4",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 142375468,
+              "duration": 179894976,
               "status": "passed"
             },
             "line": 19,
@@ -550,7 +550,7 @@
           },
           {
             "result": {
-              "duration": 141613110,
+              "duration": 182344607,
               "status": "passed"
             },
             "line": 20,
@@ -571,7 +571,7 @@
           },
           {
             "result": {
-              "duration": 132544153,
+              "duration": 420294449,
               "status": "passed"
             },
             "line": 21,
@@ -599,7 +599,7 @@
       },
       {
         "line": 3,
-        "name": "User is authenticated to post an Invalid request",
+        "name": "User is authenticated to make API calls",
         "description": "",
         "type": "background",
         "keyword": "Background"
@@ -608,13 +608,13 @@
         "line": 28,
         "name": "2.Get data from invalid endPoint",
         "description": "",
-        "id": "authenticated-user-can-post-data-to-lists-endpoint;2.get-data-from-invalid-endpoint;;5",
+        "id": "authenticated-user-can-post-and-get-data-from-endpoints;2.get-data-from-invalid-endpoint;;5",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 502043063,
+              "duration": 680762414,
               "status": "passed"
             },
             "line": 19,
@@ -635,7 +635,7 @@
           },
           {
             "result": {
-              "duration": 173486515,
+              "duration": 223509822,
               "status": "passed"
             },
             "line": 20,
@@ -656,7 +656,7 @@
           },
           {
             "result": {
-              "duration": 162817382,
+              "duration": 383354996,
               "status": "passed"
             },
             "line": 21,
@@ -684,7 +684,7 @@
       },
       {
         "line": 3,
-        "name": "User is authenticated to post an Invalid request",
+        "name": "User is authenticated to make API calls",
         "description": "",
         "type": "background",
         "keyword": "Background"
@@ -693,28 +693,16 @@
         "line": 31,
         "name": "3.Post valid data into lists endpoint",
         "description": "",
-        "id": "authenticated-user-can-post-data-to-lists-endpoint;3.post-valid-data-into-lists-endpoint",
+        "id": "authenticated-user-can-post-and-get-data-from-endpoints;3.post-valid-data-into-lists-endpoint",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 283205416,
+              "duration": 819522148,
               "status": "passed"
             },
             "line": 32,
-            "name": "I am an authenticated list endpoint user",
-            "match": {
-              "location": "CallStepDef.iAmAnAuthenticatedListEndpointUser()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 252008683,
-              "status": "passed"
-            },
-            "line": 33,
             "name": "I make a valid post request on lists endpoint",
             "match": {
               "location": "CallStepDef.iMakeAValidPostRequestOnListsEndpoint()"
@@ -723,10 +711,10 @@
           },
           {
             "result": {
-              "duration": 249445510,
+              "duration": 375004672,
               "status": "passed"
             },
-            "line": 34,
+            "line": 33,
             "name": "I should get list response as 201 created",
             "match": {
               "arguments": [
@@ -743,37 +731,25 @@
       },
       {
         "line": 3,
-        "name": "User is authenticated to post an Invalid request",
+        "name": "User is authenticated to make API calls",
         "description": "",
         "type": "background",
         "keyword": "Background"
       },
       {
-        "line": 36,
+        "line": 35,
         "name": "4.Post valid data into folders endpoint",
         "description": "",
-        "id": "authenticated-user-can-post-data-to-lists-endpoint;4.post-valid-data-into-folders-endpoint",
+        "id": "authenticated-user-can-post-and-get-data-from-endpoints;4.post-valid-data-into-folders-endpoint",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 194470401,
+              "duration": 311069565,
               "status": "passed"
             },
-            "line": 37,
-            "name": "I am an authenticated folders endpoint user",
-            "match": {
-              "location": "CallStepDef.iAmAnAuthenticatedFoldersEndpointUser()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 268328856,
-              "status": "passed"
-            },
-            "line": 38,
+            "line": 36,
             "name": "I make a valid post request on folders endpoint",
             "match": {
               "location": "CallStepDef.iMakeAValidPostRequestOnFoldersEndpoint()"
@@ -782,10 +758,10 @@
           },
           {
             "result": {
-              "duration": 292697160,
+              "duration": 536913713,
               "status": "passed"
             },
-            "line": 39,
+            "line": 37,
             "name": "I should get folder response as 201 created",
             "match": {
               "arguments": [
@@ -802,37 +778,25 @@
       },
       {
         "line": 3,
-        "name": "User is authenticated to post an Invalid request",
+        "name": "User is authenticated to make API calls",
         "description": "",
         "type": "background",
         "keyword": "Background"
       },
       {
-        "line": 41,
+        "line": 39,
         "name": "5.Post valid data into comments endpoint",
         "description": "",
-        "id": "authenticated-user-can-post-data-to-lists-endpoint;5.post-valid-data-into-comments-endpoint",
+        "id": "authenticated-user-can-post-and-get-data-from-endpoints;5.post-valid-data-into-comments-endpoint",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 146869219,
+              "duration": 196291668,
               "status": "passed"
             },
-            "line": 42,
-            "name": "I am an authenticated comment endpoint user",
-            "match": {
-              "location": "CallStepDef.iAmAnAuthenticatedCommentEndpointUser()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 174180465,
-              "status": "passed"
-            },
-            "line": 43,
+            "line": 40,
             "name": "I make a valid post request on comment endpoint",
             "match": {
               "location": "CallStepDef.iMakeAValidPostRequestOnCommentEndpoint()"
@@ -841,10 +805,10 @@
           },
           {
             "result": {
-              "duration": 269469925,
+              "duration": 421384036,
               "status": "passed"
             },
-            "line": 44,
+            "line": 41,
             "name": "I should get comments response as 201 created",
             "match": {
               "arguments": [
@@ -861,25 +825,25 @@
       },
       {
         "line": 3,
-        "name": "User is authenticated to post an Invalid request",
+        "name": "User is authenticated to make API calls",
         "description": "",
         "type": "background",
         "keyword": "Background"
       },
       {
-        "line": 47,
+        "line": 44,
         "name": "6.Post Invalid data into lists endpoint",
         "description": "",
-        "id": "authenticated-user-can-post-data-to-lists-endpoint;6.post-invalid-data-into-lists-endpoint",
+        "id": "authenticated-user-can-post-and-get-data-from-endpoints;6.post-invalid-data-into-lists-endpoint",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 170474813,
+              "duration": 414669503,
               "status": "passed"
             },
-            "line": 48,
+            "line": 45,
             "name": "I make an invalid post request on lists endpoint",
             "match": {
               "location": "CallStepDef.iMakeAnInvalidPostRequestOnListsEndpoint()"
@@ -888,10 +852,10 @@
           },
           {
             "result": {
-              "duration": 173987937,
+              "duration": 416538726,
               "status": "passed"
             },
-            "line": 49,
+            "line": 46,
             "name": "I should get response as 400 Bad Request for list",
             "match": {
               "arguments": [
@@ -908,25 +872,25 @@
       },
       {
         "line": 3,
-        "name": "User is authenticated to post an Invalid request",
+        "name": "User is authenticated to make API calls",
         "description": "",
         "type": "background",
         "keyword": "Background"
       },
       {
-        "line": 51,
+        "line": 48,
         "name": "7.Post Invalid data into membership endpoint",
         "description": "",
-        "id": "authenticated-user-can-post-data-to-lists-endpoint;7.post-invalid-data-into-membership-endpoint",
+        "id": "authenticated-user-can-post-and-get-data-from-endpoints;7.post-invalid-data-into-membership-endpoint",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 168303397,
+              "duration": 805395957,
               "status": "passed"
             },
-            "line": 52,
+            "line": 49,
             "name": "I make an invalid post request on memberships endpoint",
             "match": {
               "location": "CallStepDef.iMakeAnInvalidPostRequestOnMembershipEndpoint()"
@@ -935,10 +899,10 @@
           },
           {
             "result": {
-              "duration": 179430932,
+              "duration": 448263678,
               "status": "passed"
             },
-            "line": 53,
+            "line": 50,
             "name": "I should get response as 400 Bad Request for membership",
             "match": {
               "arguments": [
@@ -955,25 +919,25 @@
       },
       {
         "line": 3,
-        "name": "User is authenticated to post an Invalid request",
+        "name": "User is authenticated to make API calls",
         "description": "",
         "type": "background",
         "keyword": "Background"
       },
       {
-        "line": 55,
+        "line": 52,
         "name": "8.Post Invalid data into upload endpoint",
         "description": "",
-        "id": "authenticated-user-can-post-data-to-lists-endpoint;8.post-invalid-data-into-upload-endpoint",
+        "id": "authenticated-user-can-post-and-get-data-from-endpoints;8.post-invalid-data-into-upload-endpoint",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 173200190,
+              "duration": 245792398,
               "status": "passed"
             },
-            "line": 56,
+            "line": 53,
             "name": "I make an invalid post request on upload endpoint",
             "match": {
               "location": "CallStepDef.iMakeAnInvalidPostRequestOnUploadEndpoint()"
@@ -982,10 +946,10 @@
           },
           {
             "result": {
-              "duration": 188061234,
+              "duration": 336164613,
               "status": "passed"
             },
-            "line": 57,
+            "line": 54,
             "name": "I should get response as 400 Bad Request for upload",
             "match": {
               "arguments": [
@@ -1001,9 +965,9 @@
         ]
       }
     ],
-    "name": "Authenticated user can Post data to lists endpoint",
+    "name": "Authenticated user can Post and Get data from endpoints",
     "description": "",
-    "id": "authenticated-user-can-post-data-to-lists-endpoint",
+    "id": "authenticated-user-can-post-and-get-data-from-endpoints",
     "keyword": "Feature",
     "uri": "src/test/java/FeatureFiles/requests.feature"
   }
