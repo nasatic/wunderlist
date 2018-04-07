@@ -1,0 +1,14 @@
+{
+  "id": 2001,
+  "user_id": 1337,
+  "state": "new",
+  "file_name": "Demo file",
+  "type": "upload",
+  "content_type": "application/json",
+  "expires_at": "2020-04-30T14:44:48Z",
+  "part": {
+    "url": "https://s3.amazonawas.com/...?partNumber=1&uploadId=something",
+    "date": "Wed, 07 Apr 2018 14:44:48 UTC +00:00",
+    "authorization": "AWS SOME-KEY-HERE:SOME-SIGNATURE-HERE"
+  }
+}
