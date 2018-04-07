@@ -128,7 +128,7 @@ formatter.match({
   "location": "CallStepDef.iAmAnAuthenticatedUserWhoCanGetRequestFrom(String)"
 });
 formatter.result({
-  "duration": 3453355468,
+  "duration": 2625377918,
   "status": "passed"
 });
 formatter.match({
@@ -141,7 +141,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAGetRequestOnEndpoint(String)"
 });
 formatter.result({
-  "duration": 284767861,
+  "duration": 270078542,
   "status": "passed"
 });
 formatter.match({
@@ -158,7 +158,7 @@ formatter.match({
   "location": "CallStepDef.getRequestResponseShouldBeWithEndpoint(int,String)"
 });
 formatter.result({
-  "duration": 355100500,
+  "duration": 428579891,
   "status": "passed"
 });
 formatter.background({
@@ -211,7 +211,7 @@ formatter.match({
   "location": "CallStepDef.iAmAnAuthenticatedUserWhoCanGetRequestFrom(String)"
 });
 formatter.result({
-  "duration": 322770455,
+  "duration": 268852846,
   "status": "passed"
 });
 formatter.match({
@@ -224,7 +224,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAGetRequestOnEndpoint(String)"
 });
 formatter.result({
-  "duration": 223959057,
+  "duration": 230406307,
   "status": "passed"
 });
 formatter.match({
@@ -241,7 +241,7 @@ formatter.match({
   "location": "CallStepDef.getRequestResponseShouldBeWithEndpoint(int,String)"
 });
 formatter.result({
-  "duration": 208327192,
+  "duration": 190145200,
   "status": "passed"
 });
 formatter.background({
@@ -294,7 +294,7 @@ formatter.match({
   "location": "CallStepDef.iAmAnAuthenticatedUserWhoCanGetRequestFrom(String)"
 });
 formatter.result({
-  "duration": 211575500,
+  "duration": 180157324,
   "status": "passed"
 });
 formatter.match({
@@ -307,7 +307,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAGetRequestOnEndpoint(String)"
 });
 formatter.result({
-  "duration": 191495019,
+  "duration": 206066212,
   "status": "passed"
 });
 formatter.match({
@@ -324,7 +324,7 @@ formatter.match({
   "location": "CallStepDef.getRequestResponseShouldBeWithEndpoint(int,String)"
 });
 formatter.result({
-  "duration": 182206029,
+  "duration": 162301855,
   "status": "passed"
 });
 formatter.background({
@@ -377,7 +377,7 @@ formatter.match({
   "location": "CallStepDef.iAmAnAuthenticatedUserWhoCanGetRequestFrom(String)"
 });
 formatter.result({
-  "duration": 141252736,
+  "duration": 141723832,
   "status": "passed"
 });
 formatter.match({
@@ -390,7 +390,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAGetRequestOnEndpoint(String)"
 });
 formatter.result({
-  "duration": 149385495,
+  "duration": 172470978,
   "status": "passed"
 });
 formatter.match({
@@ -407,7 +407,7 @@ formatter.match({
   "location": "CallStepDef.getRequestResponseShouldBeWithEndpoint(int,String)"
 });
 formatter.result({
-  "duration": 155696986,
+  "duration": 153533328,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -532,7 +532,7 @@ formatter.match({
   "location": "CallStepDef.iAmAnAuthenticatedUserWhoCanGetRequestFrom(String)"
 });
 formatter.result({
-  "duration": 138741397,
+  "duration": 143955545,
   "status": "passed"
 });
 formatter.match({
@@ -545,7 +545,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAGetRequestOnEndpoint(String)"
 });
 formatter.result({
-  "duration": 138577430,
+  "duration": 138454367,
   "status": "passed"
 });
 formatter.match({
@@ -562,7 +562,7 @@ formatter.match({
   "location": "CallStepDef.getRequestResponseShouldBeWithEndpoint(int,String)"
 });
 formatter.result({
-  "duration": 139290775,
+  "duration": 162449955,
   "status": "passed"
 });
 formatter.background({
@@ -615,7 +615,7 @@ formatter.match({
   "location": "CallStepDef.iAmAnAuthenticatedUserWhoCanGetRequestFrom(String)"
 });
 formatter.result({
-  "duration": 176854712,
+  "duration": 172427606,
   "status": "passed"
 });
 formatter.match({
@@ -628,7 +628,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAGetRequestOnEndpoint(String)"
 });
 formatter.result({
-  "duration": 138932868,
+  "duration": 155285835,
   "status": "passed"
 });
 formatter.match({
@@ -645,7 +645,7 @@ formatter.match({
   "location": "CallStepDef.getRequestResponseShouldBeWithEndpoint(int,String)"
 });
 formatter.result({
-  "duration": 141934344,
+  "duration": 139535843,
   "status": "passed"
 });
 formatter.background({
@@ -698,7 +698,7 @@ formatter.match({
   "location": "CallStepDef.iAmAnAuthenticatedUserWhoCanGetRequestFrom(String)"
 });
 formatter.result({
-  "duration": 137791799,
+  "duration": 142375468,
   "status": "passed"
 });
 formatter.match({
@@ -711,7 +711,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAGetRequestOnEndpoint(String)"
 });
 formatter.result({
-  "duration": 130395305,
+  "duration": 141613110,
   "status": "passed"
 });
 formatter.match({
@@ -728,7 +728,7 @@ formatter.match({
   "location": "CallStepDef.getRequestResponseShouldBeWithEndpoint(int,String)"
 });
 formatter.result({
-  "duration": 133223998,
+  "duration": 132544153,
   "status": "passed"
 });
 formatter.background({
@@ -781,7 +781,7 @@ formatter.match({
   "location": "CallStepDef.iAmAnAuthenticatedUserWhoCanGetRequestFrom(String)"
 });
 formatter.result({
-  "duration": 563896319,
+  "duration": 502043063,
   "status": "passed"
 });
 formatter.match({
@@ -794,7 +794,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAGetRequestOnEndpoint(String)"
 });
 formatter.result({
-  "duration": 188743548,
+  "duration": 173486515,
   "status": "passed"
 });
 formatter.match({
@@ -811,7 +811,7 @@ formatter.match({
   "location": "CallStepDef.getRequestResponseShouldBeWithEndpoint(int,String)"
 });
 formatter.result({
-  "duration": 198909497,
+  "duration": 162817382,
   "status": "passed"
 });
 formatter.background({
@@ -848,14 +848,14 @@ formatter.match({
   "location": "CallStepDef.iAmAnAuthenticatedListEndpointUser()"
 });
 formatter.result({
-  "duration": 370980254,
+  "duration": 283205416,
   "status": "passed"
 });
 formatter.match({
   "location": "CallStepDef.iMakeAValidPostRequestOnListsEndpoint()"
 });
 formatter.result({
-  "duration": 246254326,
+  "duration": 252008683,
   "status": "passed"
 });
 formatter.match({
@@ -868,7 +868,7 @@ formatter.match({
   "location": "CallStepDef.iShouldGetListResponseAsCreated(int)"
 });
 formatter.result({
-  "duration": 239711517,
+  "duration": 249445510,
   "status": "passed"
 });
 formatter.background({
@@ -905,14 +905,14 @@ formatter.match({
   "location": "CallStepDef.iAmAnAuthenticatedFoldersEndpointUser()"
 });
 formatter.result({
-  "duration": 246227879,
+  "duration": 194470401,
   "status": "passed"
 });
 formatter.match({
   "location": "CallStepDef.iMakeAValidPostRequestOnFoldersEndpoint()"
 });
 formatter.result({
-  "duration": 322486951,
+  "duration": 268328856,
   "status": "passed"
 });
 formatter.match({
@@ -925,7 +925,7 @@ formatter.match({
   "location": "CallStepDef.iShouldGetFolderResponseAsCreated(int)"
 });
 formatter.result({
-  "duration": 248732871,
+  "duration": 292697160,
   "status": "passed"
 });
 formatter.background({
@@ -962,14 +962,14 @@ formatter.match({
   "location": "CallStepDef.iAmAnAuthenticatedCommentEndpointUser()"
 });
 formatter.result({
-  "duration": 163516622,
+  "duration": 146869219,
   "status": "passed"
 });
 formatter.match({
   "location": "CallStepDef.iMakeAValidPostRequestOnCommentEndpoint()"
 });
 formatter.result({
-  "duration": 252425124,
+  "duration": 174180465,
   "status": "passed"
 });
 formatter.match({
@@ -982,7 +982,7 @@ formatter.match({
   "location": "CallStepDef.iShouldGetCommentsResponseAsCreated(int)"
 });
 formatter.result({
-  "duration": 264425738,
+  "duration": 269469925,
   "status": "passed"
 });
 formatter.background({
@@ -1014,7 +1014,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAnInvalidPostRequestOnListsEndpoint()"
 });
 formatter.result({
-  "duration": 195167172,
+  "duration": 170474813,
   "status": "passed"
 });
 formatter.match({
@@ -1027,7 +1027,7 @@ formatter.match({
   "location": "CallStepDef.iShouldGetResponseAsBadRequestForList(int)"
 });
 formatter.result({
-  "duration": 226447828,
+  "duration": 173987937,
   "status": "passed"
 });
 formatter.background({
@@ -1059,7 +1059,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAnInvalidPostRequestOnMembershipEndpoint()"
 });
 formatter.result({
-  "duration": 202967061,
+  "duration": 168303397,
   "status": "passed"
 });
 formatter.match({
@@ -1072,7 +1072,7 @@ formatter.match({
   "location": "CallStepDef.iShouldGetResponseAsBadRequestForMembership(int)"
 });
 formatter.result({
-  "duration": 179399902,
+  "duration": 179430932,
   "status": "passed"
 });
 formatter.background({
@@ -1104,7 +1104,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAnInvalidPostRequestOnUploadEndpoint()"
 });
 formatter.result({
-  "duration": 209199566,
+  "duration": 173200190,
   "status": "passed"
 });
 formatter.match({
@@ -1117,7 +1117,7 @@ formatter.match({
   "location": "CallStepDef.iShouldGetResponseAsBadRequestForUpload(int)"
 });
 formatter.result({
-  "duration": 184019890,
+  "duration": 188061234,
   "status": "passed"
 });
 });

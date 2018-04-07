@@ -1,4 +1,4 @@
-Feature: Authenticated user can Post data to lists endpoint
+Feature: Authenticated user can Post and Get data from endpoints
 
   Background: User is authenticated to post an Invalid request
 

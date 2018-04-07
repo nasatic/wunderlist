@@ -146,8 +146,7 @@ public class CallStepDef {
                 .header("X-Client-ID", "2174bddbc41e1098d48d")
                 .header("X-Access-Token", "92f627d4bd9d027da6b1f93d582a44d8fd8c55c2686c0003799d79d063d3")
                 .when()
-                .get("http://a.wunderlist.com/api/v1/folders")
-                .then().log().all();
+                .get("http://a.wunderlist.com/api/v1/folders");
     }
 
     @Given("^I am an authenticated comment endpoint user$")
@@ -170,8 +169,7 @@ public class CallStepDef {
                 .with()
                 .body(payLoad.badlist())
                 .when()
-                .post("http://a.wunderlist.com/api/v1/lists")
-                .then().log().all();
+                .post("http://a.wunderlist.com/api/v1/lists");
     }
 
     @Then("^I should get response as (\\d+) Bad Request for list$")

@@ -12,7 +12,6 @@ import org.junit.runner.RunWith;
         glue = "StepDefs",
         plugin = {"json:target/cucumber.json", "html:target/html/cucumber-html-reports"})
 
-public class ForecastRunner extends AbstractTestNGCucumberTests {
-
+public class requestRunner extends AbstractTestNGCucumberTests{
 }
 
