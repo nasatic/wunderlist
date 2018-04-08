@@ -7,7 +7,13 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.scenarioOutline({
-  "line": 5,
+  "comments": [
+    {
+      "line": 5,
+      "value": "# some negative test plugged in this scenario using wrong status code."
+    }
+  ],
+  "line": 6,
   "name": "1.Get data from valid endPoint",
   "description": "",
   "id": "authenticated-user-can-post-and-get-data-from-endpoints;1.get-data-from-valid-endpoint",
@@ -15,22 +21,22 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 6,
+  "line": 7,
   "name": "I am an authenticated user who can get request from \"\u003cend-point\u003e\"",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 7,
+  "line": 8,
   "name": "I make a get request on endpoint \"\u003cend-point\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 8,
+  "line": 9,
   "name": "get request response should be \"\u003crespCode\u003e\" with endpoint \"\u003cend-point\u003e\"",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 10,
+  "line": 11,
   "name": "",
   "description": "",
   "id": "authenticated-user-can-post-and-get-data-from-endpoints;1.get-data-from-valid-endpoint;",
@@ -40,15 +46,15 @@ formatter.examples({
         "respCode",
         "end-point"
       ],
-      "line": 11,
+      "line": 12,
       "id": "authenticated-user-can-post-and-get-data-from-endpoints;1.get-data-from-valid-endpoint;;1"
     },
     {
       "cells": [
-        "200",
+        "400",
         "http://a.wunderlist.com/api/v1/folders"
       ],
-      "line": 12,
+      "line": 13,
       "id": "authenticated-user-can-post-and-get-data-from-endpoints;1.get-data-from-valid-endpoint;;2"
     },
     {
@@ -56,15 +62,15 @@ formatter.examples({
         "200",
         "http://a.wunderlist.com/api/v1/lists"
       ],
-      "line": 13,
+      "line": 14,
       "id": "authenticated-user-can-post-and-get-data-from-endpoints;1.get-data-from-valid-endpoint;;3"
     },
     {
       "cells": [
-        "200",
+        "201",
         "http://a.wunderlist.com/api/v1/memberships"
       ],
-      "line": 14,
+      "line": 15,
       "id": "authenticated-user-can-post-and-get-data-from-endpoints;1.get-data-from-valid-endpoint;;4"
     },
     {
@@ -72,7 +78,7 @@ formatter.examples({
         "200",
         "http://a.wunderlist.com/api/v1/root"
       ],
-      "line": 15,
+      "line": 16,
       "id": "authenticated-user-can-post-and-get-data-from-endpoints;1.get-data-from-valid-endpoint;;5"
     }
   ],
@@ -86,7 +92,7 @@ formatter.background({
   "keyword": "Background"
 });
 formatter.scenario({
-  "line": 12,
+  "line": 13,
   "name": "1.Get data from valid endPoint",
   "description": "",
   "id": "authenticated-user-can-post-and-get-data-from-endpoints;1.get-data-from-valid-endpoint;;2",
@@ -94,7 +100,7 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 6,
+  "line": 7,
   "name": "I am an authenticated user who can get request from \"http://a.wunderlist.com/api/v1/folders\"",
   "matchedColumns": [
     1
@@ -102,7 +108,7 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "line": 7,
+  "line": 8,
   "name": "I make a get request on endpoint \"http://a.wunderlist.com/api/v1/folders\"",
   "matchedColumns": [
     1
@@ -110,8 +116,8 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 8,
-  "name": "get request response should be \"200\" with endpoint \"http://a.wunderlist.com/api/v1/folders\"",
+  "line": 9,
+  "name": "get request response should be \"400\" with endpoint \"http://a.wunderlist.com/api/v1/folders\"",
   "matchedColumns": [
     0,
     1
@@ -128,7 +134,7 @@ formatter.match({
   "location": "CallStepDef.iAmAnAuthenticatedUserWhoCanGetRequestFrom(String)"
 });
 formatter.result({
-  "duration": 2689855702,
+  "duration": 2389825165,
   "status": "passed"
 });
 formatter.match({
@@ -141,13 +147,13 @@ formatter.match({
   "location": "CallStepDef.iMakeAGetRequestOnEndpoint(String)"
 });
 formatter.result({
-  "duration": 326631964,
+  "duration": 276540249,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "200",
+      "val": "400",
       "offset": 32
     },
     {
@@ -158,8 +164,9 @@ formatter.match({
   "location": "CallStepDef.getRequestResponseShouldBeWithEndpoint(int,String)"
 });
 formatter.result({
-  "duration": 860116829,
-  "status": "passed"
+  "duration": 471234209,
+  "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c400\u003e but was \u003c200\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:643)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)\r\n\tat StepDefs.CallStepDef.getRequestResponseShouldBeWithEndpoint(CallStepDef.java:43)\r\n\tat ✽.Then get request response should be \"400\" with endpoint \"http://a.wunderlist.com/api/v1/folders\"(src/test/java/FeatureFiles/requests.feature:9)\r\n",
+  "status": "failed"
 });
 formatter.background({
   "line": 3,
@@ -169,7 +176,7 @@ formatter.background({
   "keyword": "Background"
 });
 formatter.scenario({
-  "line": 13,
+  "line": 14,
   "name": "1.Get data from valid endPoint",
   "description": "",
   "id": "authenticated-user-can-post-and-get-data-from-endpoints;1.get-data-from-valid-endpoint;;3",
@@ -177,7 +184,7 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 6,
+  "line": 7,
   "name": "I am an authenticated user who can get request from \"http://a.wunderlist.com/api/v1/lists\"",
   "matchedColumns": [
     1
@@ -185,7 +192,7 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "line": 7,
+  "line": 8,
   "name": "I make a get request on endpoint \"http://a.wunderlist.com/api/v1/lists\"",
   "matchedColumns": [
     1
@@ -193,7 +200,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 8,
+  "line": 9,
   "name": "get request response should be \"200\" with endpoint \"http://a.wunderlist.com/api/v1/lists\"",
   "matchedColumns": [
     0,
@@ -211,7 +218,7 @@ formatter.match({
   "location": "CallStepDef.iAmAnAuthenticatedUserWhoCanGetRequestFrom(String)"
 });
 formatter.result({
-  "duration": 522500492,
+  "duration": 240554272,
   "status": "passed"
 });
 formatter.match({
@@ -224,7 +231,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAGetRequestOnEndpoint(String)"
 });
 formatter.result({
-  "duration": 560117323,
+  "duration": 238594074,
   "status": "passed"
 });
 formatter.match({
@@ -241,7 +248,7 @@ formatter.match({
   "location": "CallStepDef.getRequestResponseShouldBeWithEndpoint(int,String)"
 });
 formatter.result({
-  "duration": 379168726,
+  "duration": 143597286,
   "status": "passed"
 });
 formatter.background({
@@ -252,7 +259,7 @@ formatter.background({
   "keyword": "Background"
 });
 formatter.scenario({
-  "line": 14,
+  "line": 15,
   "name": "1.Get data from valid endPoint",
   "description": "",
   "id": "authenticated-user-can-post-and-get-data-from-endpoints;1.get-data-from-valid-endpoint;;4",
@@ -260,7 +267,7 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 6,
+  "line": 7,
   "name": "I am an authenticated user who can get request from \"http://a.wunderlist.com/api/v1/memberships\"",
   "matchedColumns": [
     1
@@ -268,7 +275,7 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "line": 7,
+  "line": 8,
   "name": "I make a get request on endpoint \"http://a.wunderlist.com/api/v1/memberships\"",
   "matchedColumns": [
     1
@@ -276,8 +283,8 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 8,
-  "name": "get request response should be \"200\" with endpoint \"http://a.wunderlist.com/api/v1/memberships\"",
+  "line": 9,
+  "name": "get request response should be \"201\" with endpoint \"http://a.wunderlist.com/api/v1/memberships\"",
   "matchedColumns": [
     0,
     1
@@ -294,7 +301,7 @@ formatter.match({
   "location": "CallStepDef.iAmAnAuthenticatedUserWhoCanGetRequestFrom(String)"
 });
 formatter.result({
-  "duration": 492524872,
+  "duration": 176514790,
   "status": "passed"
 });
 formatter.match({
@@ -307,13 +314,13 @@ formatter.match({
   "location": "CallStepDef.iMakeAGetRequestOnEndpoint(String)"
 });
 formatter.result({
-  "duration": 479235089,
+  "duration": 153189174,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "200",
+      "val": "201",
       "offset": 32
     },
     {
@@ -324,8 +331,9 @@ formatter.match({
   "location": "CallStepDef.getRequestResponseShouldBeWithEndpoint(int,String)"
 });
 formatter.result({
-  "duration": 247924320,
-  "status": "passed"
+  "duration": 85929241,
+  "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c201\u003e but was \u003c200\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:643)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)\r\n\tat StepDefs.CallStepDef.getRequestResponseShouldBeWithEndpoint(CallStepDef.java:43)\r\n\tat ✽.Then get request response should be \"201\" with endpoint \"http://a.wunderlist.com/api/v1/memberships\"(src/test/java/FeatureFiles/requests.feature:9)\r\n",
+  "status": "failed"
 });
 formatter.background({
   "line": 3,
@@ -335,7 +343,7 @@ formatter.background({
   "keyword": "Background"
 });
 formatter.scenario({
-  "line": 15,
+  "line": 16,
   "name": "1.Get data from valid endPoint",
   "description": "",
   "id": "authenticated-user-can-post-and-get-data-from-endpoints;1.get-data-from-valid-endpoint;;5",
@@ -343,7 +351,7 @@ formatter.scenario({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 6,
+  "line": 7,
   "name": "I am an authenticated user who can get request from \"http://a.wunderlist.com/api/v1/root\"",
   "matchedColumns": [
     1
@@ -351,7 +359,7 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "line": 7,
+  "line": 8,
   "name": "I make a get request on endpoint \"http://a.wunderlist.com/api/v1/root\"",
   "matchedColumns": [
     1
@@ -359,7 +367,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 8,
+  "line": 9,
   "name": "get request response should be \"200\" with endpoint \"http://a.wunderlist.com/api/v1/root\"",
   "matchedColumns": [
     0,
@@ -377,7 +385,7 @@ formatter.match({
   "location": "CallStepDef.iAmAnAuthenticatedUserWhoCanGetRequestFrom(String)"
 });
 formatter.result({
-  "duration": 217037890,
+  "duration": 61272496,
   "status": "passed"
 });
 formatter.match({
@@ -390,7 +398,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAGetRequestOnEndpoint(String)"
 });
 formatter.result({
-  "duration": 232431739,
+  "duration": 60333477,
   "status": "passed"
 });
 formatter.match({
@@ -407,7 +415,7 @@ formatter.match({
   "location": "CallStepDef.getRequestResponseShouldBeWithEndpoint(int,String)"
 });
 formatter.result({
-  "duration": 207525340,
+  "duration": 53001864,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -532,7 +540,7 @@ formatter.match({
   "location": "CallStepDef.iAmAnAuthenticatedUserWhoCanGetRequestFrom(String)"
 });
 formatter.result({
-  "duration": 360314648,
+  "duration": 58854601,
   "status": "passed"
 });
 formatter.match({
@@ -545,7 +553,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAGetRequestOnEndpoint(String)"
 });
 formatter.result({
-  "duration": 406555080,
+  "duration": 48454515,
   "status": "passed"
 });
 formatter.match({
@@ -562,7 +570,7 @@ formatter.match({
   "location": "CallStepDef.getRequestResponseShouldBeWithEndpoint(int,String)"
 });
 formatter.result({
-  "duration": 357560709,
+  "duration": 56733962,
   "status": "passed"
 });
 formatter.background({
@@ -615,7 +623,7 @@ formatter.match({
   "location": "CallStepDef.iAmAnAuthenticatedUserWhoCanGetRequestFrom(String)"
 });
 formatter.result({
-  "duration": 490135892,
+  "duration": 95967543,
   "status": "passed"
 });
 formatter.match({
@@ -628,7 +636,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAGetRequestOnEndpoint(String)"
 });
 formatter.result({
-  "duration": 248854877,
+  "duration": 53245522,
   "status": "passed"
 });
 formatter.match({
@@ -645,7 +653,7 @@ formatter.match({
   "location": "CallStepDef.getRequestResponseShouldBeWithEndpoint(int,String)"
 });
 formatter.result({
-  "duration": 235720598,
+  "duration": 62012287,
   "status": "passed"
 });
 formatter.background({
@@ -698,7 +706,7 @@ formatter.match({
   "location": "CallStepDef.iAmAnAuthenticatedUserWhoCanGetRequestFrom(String)"
 });
 formatter.result({
-  "duration": 179894976,
+  "duration": 43758009,
   "status": "passed"
 });
 formatter.match({
@@ -711,7 +719,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAGetRequestOnEndpoint(String)"
 });
 formatter.result({
-  "duration": 182344607,
+  "duration": 50769798,
   "status": "passed"
 });
 formatter.match({
@@ -728,7 +736,7 @@ formatter.match({
   "location": "CallStepDef.getRequestResponseShouldBeWithEndpoint(int,String)"
 });
 formatter.result({
-  "duration": 420294449,
+  "duration": 59283383,
   "status": "passed"
 });
 formatter.background({
@@ -781,7 +789,7 @@ formatter.match({
   "location": "CallStepDef.iAmAnAuthenticatedUserWhoCanGetRequestFrom(String)"
 });
 formatter.result({
-  "duration": 680762414,
+  "duration": 381380341,
   "status": "passed"
 });
 formatter.match({
@@ -794,7 +802,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAGetRequestOnEndpoint(String)"
 });
 formatter.result({
-  "duration": 223509822,
+  "duration": 74618698,
   "status": "passed"
 });
 formatter.match({
@@ -811,7 +819,7 @@ formatter.match({
   "location": "CallStepDef.getRequestResponseShouldBeWithEndpoint(int,String)"
 });
 formatter.result({
-  "duration": 383354996,
+  "duration": 47174516,
   "status": "passed"
 });
 formatter.background({
@@ -843,7 +851,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAValidPostRequestOnListsEndpoint()"
 });
 formatter.result({
-  "duration": 819522148,
+  "duration": 182478601,
   "status": "passed"
 });
 formatter.match({
@@ -856,7 +864,7 @@ formatter.match({
   "location": "CallStepDef.iShouldGetListResponseAsCreated(int)"
 });
 formatter.result({
-  "duration": 375004672,
+  "duration": 127195658,
   "status": "passed"
 });
 formatter.background({
@@ -888,7 +896,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAValidPostRequestOnFoldersEndpoint()"
 });
 formatter.result({
-  "duration": 311069565,
+  "duration": 143431556,
   "status": "passed"
 });
 formatter.match({
@@ -901,7 +909,7 @@ formatter.match({
   "location": "CallStepDef.iShouldGetFolderResponseAsCreated(int)"
 });
 formatter.result({
-  "duration": 536913713,
+  "duration": 134322753,
   "status": "passed"
 });
 formatter.background({
@@ -933,7 +941,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAValidPostRequestOnCommentEndpoint()"
 });
 formatter.result({
-  "duration": 196291668,
+  "duration": 78952008,
   "status": "passed"
 });
 formatter.match({
@@ -946,7 +954,7 @@ formatter.match({
   "location": "CallStepDef.iShouldGetCommentsResponseAsCreated(int)"
 });
 formatter.result({
-  "duration": 421384036,
+  "duration": 123871890,
   "status": "passed"
 });
 formatter.background({
@@ -957,6 +965,12 @@ formatter.background({
   "keyword": "Background"
 });
 formatter.scenario({
+  "comments": [
+    {
+      "line": 43,
+      "value": "# scenario 6-8 make a post request using invalid payload data"
+    }
+  ],
   "line": 44,
   "name": "6.Post Invalid data into lists endpoint",
   "description": "",
@@ -978,7 +992,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAnInvalidPostRequestOnListsEndpoint()"
 });
 formatter.result({
-  "duration": 414669503,
+  "duration": 54277280,
   "status": "passed"
 });
 formatter.match({
@@ -991,7 +1005,7 @@ formatter.match({
   "location": "CallStepDef.iShouldGetResponseAsBadRequestForList(int)"
 });
 formatter.result({
-  "duration": 416538726,
+  "duration": 86265285,
   "status": "passed"
 });
 formatter.background({
@@ -1023,7 +1037,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAnInvalidPostRequestOnMembershipEndpoint()"
 });
 formatter.result({
-  "duration": 805395957,
+  "duration": 69162654,
   "status": "passed"
 });
 formatter.match({
@@ -1036,7 +1050,7 @@ formatter.match({
   "location": "CallStepDef.iShouldGetResponseAsBadRequestForMembership(int)"
 });
 formatter.result({
-  "duration": 448263678,
+  "duration": 46199176,
   "status": "passed"
 });
 formatter.background({
@@ -1068,7 +1082,7 @@ formatter.match({
   "location": "CallStepDef.iMakeAnInvalidPostRequestOnUploadEndpoint()"
 });
 formatter.result({
-  "duration": 245792398,
+  "duration": 52333302,
   "status": "passed"
 });
 formatter.match({
@@ -1081,7 +1095,7 @@ formatter.match({
   "location": "CallStepDef.iShouldGetResponseAsBadRequestForUpload(int)"
 });
 formatter.result({
-  "duration": 336164613,
+  "duration": 50878757,
   "status": "passed"
 });
 });
